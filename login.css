@@ -1,0 +1,97 @@
+:root {
+    --light-gray: #eeeeee;
+    --blue: #007aff;
+    --dark-gray: #111111;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: right;
+    height: 100vh;
+    background-color: var(--light-gray);
+
+    background-image: url('./images/pexels-ben-mack-6775241.jpg');
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-position: left top;
+}
+
+.container {
+    padding-top: 20px;
+    height: 100vh;
+    background-color: white;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.form-login {
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-control>input {
+    padding: 8px;
+    border: 1px solid var(--light-gray);
+
+}
+
+.form-control>input::placeholder {
+    color: #111111;
+}
+
+.lbl-pass {
+    display: flex;
+}
+
+.lbl-pass>a {
+    margin-left: auto;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: var(--blue);
+    padding: 8px;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    filter: brightness(1.1);
+}
+
+input[type="submit"]:active {
+    scale: 0.96;
+    translate: 2% 2%;
+}
